@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Prints stylesheet to stdout.
 # Configurable via environment variable MODE. MODE=dark does a dark color scheme; otherwise does a light color scheme.
 

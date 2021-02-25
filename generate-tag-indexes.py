@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Generates index page for all calls in a particular release tag.
 
 import sys
@@ -50,7 +50,7 @@ def tag2html(tag):
         else:
             link = '<a href="../cats/{}.html">{}</a>'.format(category, category)
         parts.append('<td>{}</td>'.format(link))
-        
+
         parts.append('<td><a href="../docs/{}/{}.html">{}</a></td>'.format(tag, call, call))
 
         parts.append('</tr>')

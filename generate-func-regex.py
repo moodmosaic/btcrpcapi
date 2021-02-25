@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Prints a regex to match definition lines for each RPC function in a release.
 
 import sqlite3

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Load RPC API calls from bitcoin source files into the database.
 
 import sqlite3

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Loads metadata about a release into the database.
 
 import sqlite3

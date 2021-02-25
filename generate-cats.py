@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Generates an API doc chart for each category.
 
 import sys
@@ -26,7 +26,7 @@ dbcursor.execute(sql)
 cats = dbcursor.fetchall()
 for [cat] in cats:
     relpath = "../"
-    
+
     with open('cats/{}.html'.format(cat), 'w') as f:
         f.write(index.header(relpath=relpath))
 

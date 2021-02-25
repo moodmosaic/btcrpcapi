@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Generates webpage charting RPC API calls for each Bitcoin version.
 
 import sys
@@ -66,8 +66,8 @@ def chart(dbcursor, cat=None, relpath=""):
     parts.append('<th>Call</th>')
     if cat == None:
         parts.append('<th>Category</th>')
-    
-    parts.append('''            
+
+    parts.append('''
         </tr>
     </thead>
     <tbody>
@@ -150,14 +150,14 @@ def chart(dbcursor, cat=None, relpath=""):
             if tag not in callDocs:
                 parts.append('<td title="{}"></td>'.format(tag))
                 continue
-            
+
             [message, deprecated] = callDocs[tag]
 
             p = "docs/{}/{}.html".format(tag, call)
             link = ""
             if os.path.exists(p):
                 link = '<a href="{}{}">?</a>'.format(relpath, p)
-            
+
             # Check if the message changed from the previous version. If so, vary the color.
             msgchanged = False
 
@@ -165,11 +165,11 @@ def chart(dbcursor, cat=None, relpath=""):
             if msghash != None and newhash != msghash:
                 msgchanged = True
             msghash = newhash
-        
+
             changedClass = ""
             if msgchanged:
                 changedClass = "msg-changed"
-            
+
             deprecatedClass = ""
             if deprecated:
                 deprecatedClass = "deprecated"

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # Extracts RPC API docs from bitcoin source files.
 
 import sqlite3
