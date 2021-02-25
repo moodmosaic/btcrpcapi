@@ -205,7 +205,7 @@ if __name__ == "__main__":
 
     print('''
         <h1>A Map of the Bitcoin Core RPC API across Versions</h1>
-        <h3>By <a href="https://masonsimon.com">Mason Simon</a></h3>
+        <h3>By <a href="https://masonsimon.com">Mason Simon</a>, <a href="https://nikosbaxevanis.com">Nikos Baxevanis</a></h3>
     ''')
 
     print('<h3>Last updated {}.</h3>'.format(datetime.date.today()))
